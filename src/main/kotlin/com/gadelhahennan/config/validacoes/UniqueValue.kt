@@ -24,7 +24,7 @@ annotation class UniqueValue(val message: String = "valor já cadastrado",
 )
 
 
-
+//refatorar para validacao se tornar mais generecia
 
 @Singleton
 class UniqueValueValidator: ConstraintValidator<UniqueValue,String>{
