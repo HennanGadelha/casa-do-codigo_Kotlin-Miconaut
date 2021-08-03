@@ -18,7 +18,7 @@ open class CadastroAutorController(val autorRepository: AutorRepository) {
         val autor = request.toModel()
         autorRepository.save(autor)
 
-        return HttpResponse.created(location(autor.autorId))
+        return HttpResponse.created(location(autor.autorUuid))
 
     }
 

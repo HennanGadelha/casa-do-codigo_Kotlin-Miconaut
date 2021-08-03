@@ -16,7 +16,7 @@ class Autor(
     @Id
     @GeneratedValue
     val id: Long? =null;
-    val autorId: UUID = UUID.randomUUID()
+    val autorUuid: UUID = UUID.randomUUID()
     val criadoEm: LocalDateTime = LocalDateTime.now()
 
 }
